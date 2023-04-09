@@ -1,8 +1,8 @@
 async function main() {
-
+    // the method of this fetch request is automatically GET
     let response = await fetch('http://localhost:3001/listBooks')
     let books = await response.json()
-
+    // books is an array!!!
     books.forEach(renderBook)
 }
 
